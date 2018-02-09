@@ -16,7 +16,7 @@ class Dataset():
 	
 	def __init__ (self,variables,tolerance, use_sampling, sampling_time):
 		#self.var_choice = var_choice
-		self.file = pandas.read_csv("C:\Skolan\Exjobb\Drive_KTH_Formula_Student_1december.csv")
+		self.file = pandas.read_csv("C:\Skolan\Exjobb\Drive_KTH_Formula_Student_1december-kopia.csv")
 		self.dataset = pandas.DataFrame(self.file, columns=variables)
 		self.array = self.dataset.values
 		self.tolerance = tolerance
